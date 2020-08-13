@@ -7,4 +7,12 @@ body {
 
 h1 {
   font-family: "Roboto", sans-serif;
+  display: inline;
+}
+
+.circle {
+  background-color: pink;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
 }

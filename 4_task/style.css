@@ -1,0 +1,23 @@
+body {
+  background-color: #333;
+  font-family: "Noto Sans TC", sans-serif;
+  color: white;
+}
+
+header {
+  background-color: rgb(15, 11, 11);
+}
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+  background-color: darkolivegreen;
+}
+
+header ul {
+  list-style: none;
+}
+
+header ul li {
+  display: inline-block;
+}
