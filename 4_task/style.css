@@ -10,11 +10,14 @@ body {
   color: white;
   height: 100%;
 }
-
+h1 {
+  padding: 20px 0;
+}
 img {
   float: left;
   margin-right: 40px;
 }
+/* Header area */
 
 header {
   background-color: rgb(15, 11, 11);
@@ -24,8 +27,12 @@ header {
 header ul li a {
   color: white;
   text-decoration: none;
-  background-color: darkolivegreen;
+  background-color: rgb(17, 26, 2);
   padding: 10px;
+}
+
+header ul li a:hover {
+  background-color: rgb(43, 67, 5);
 }
 
 header ul {
@@ -36,10 +43,19 @@ header ul li {
   display: inline-block;
 }
 
+/* Main area */
+
+main {
+  padding: 40px;
+}
+
+/* Contact page */
+
 table {
   background-color: white;
   color: #333;
   border-collapse: collapse;
+  width: 100%;
 }
 
 thead {
@@ -48,8 +64,16 @@ thead {
 }
 
 tr {
-  border-bottom: 5px solid #333;
+  border-bottom: 1px solid grey;
+  padding: 10px;
 }
+
+td {
+  padding: 20px;
+  width: 25%;
+}
+
+/* Boxes page */
 
 #boxes {
   background: #333 url("https://source.unsplash.com/1200x900/?sky") no-repeat
@@ -86,8 +110,4 @@ tr {
   background-color: yellow;
   border: 5px solid black;
   border-radius: 50%;
-}
-
-.blue {
-  background-color: blue;
 }
