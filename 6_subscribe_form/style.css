@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Global  */
+
+body {
+  background-color: #236747;
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  color: coral;
+  text-decoration: none;
+}
+
+a:hover {
+  color: chocolate;
+  text-decoration: underline;
+}
+
+input,
+textarea,
+button {
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  background: white;
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* margin-bottom class for elements where I want to use it */
+.mb20 {
+  margin-bottom: 20px;
+}
+
+/* main area with the form */
+
+main .container .form-group label {
+  display: block;
+  font-size: 10px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+main .container .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #a4a4a4;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+main .container form button {
+  width: 80%;
+  background-color: coral;
+  border: none;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+main .container form button:hover {
+  background-color: chocolate;
+}
+
+main .container .bottom-text {
+  font-size: 12px;
+}
+
+/* footer area */
+
+footer {
+  text-align: center;
+  margin: -30px 0 50px 0;
+  color: white;
+}

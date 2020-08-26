@@ -1,0 +1,204 @@
+<!-- In this task, you see HTML table where are collected different input types with notes about the use of those. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Dosis&display=swap"
+      rel="stylesheet"
+    />
+    <title>Input types</title>
+  </head>
+  <style>
+    body,
+    input,
+    button {
+      font-family: "Dosis", sans-serif;
+      font-size: 16px;
+    }
+    table,
+    th,
+    td {
+      border: 1px solid #333;
+      border-collapse: collapse;
+      padding: 10px;
+    }
+    th {
+      background-color: coral;
+      color: white;
+    }
+    table {
+      margin: 20px;
+    }
+    .center {
+      text-align: center;
+      background: #ebebeb;
+    }
+  </style>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <td>Description</td>
+          <td>Input example</td>
+          <td>Notes</td>
+        </tr>
+      </thead>
+      <tbody>
+        <h2>Form elements</h2>
+        <tr>
+          <td class="center" colspan="3">Input types:</td>
+        </tr>
+        <tr>
+          <td>type="button"</td>
+          <td><input type="button" value="click me" /></td>
+          <td>Needs value attribute for button text</td>
+        </tr>
+        <tr>
+          <td>type="checkbox"</td>
+          <td><input type="checkbox" /> something else</td>
+          <td>Checkbox text comes after input tag</td>
+        </tr>
+        <tr>
+          <td>type="color"</td>
+          <td><input type="color" value="#ff0000" /></td>
+          <td>
+            With value you can set default color. <br />
+            type="color" is not supported in Internet Explorer 11 and earlier
+            versions or Safari 9.1 and earlier versions.
+          </td>
+        </tr>
+        <tr>
+          <td>type="date"</td>
+          <td><input type="date" /></td>
+          <td>
+            type="date" is not supported in Safari or Internet Explorer 11 and
+            earlier versions.
+          </td>
+        </tr>
+        <tr>
+          <td>type="email"</td>
+          <td><input type="email" placeholder="Enter your email" /></td>
+          <td>type="email" is not supported in IE9 and earlier.</td>
+        </tr>
+        <tr>
+          <td>type="file"</td>
+          <td><input type="file" /></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>type="month"</td>
+          <td><input type="month" /></td>
+          <td>
+            type="month" is not supported in Firefox, Safari, or Internet
+            Explorer 11 and earlier versions.
+          </td>
+        </tr>
+        <tr>
+          <td>type="number"</td>
+          <td><input type="number" /></td>
+          <td>
+            You can use the min and max attributes to add numeric restrictions
+            in the input field. <br />type="number" is not supported in IE9 and
+            earlier.
+          </td>
+        </tr>
+        <tr>
+          <td>type="password"</td>
+          <td><input type="password" /></td>
+          <td>
+            The characters in a password field are masked (shown as asterisks or
+            circles).
+          </td>
+        </tr>
+        <tr>
+          <td>type="radio"</td>
+          <td><input type="radio" />Radiobutton</td>
+          <td>Radiobutton text comes after input tag</td>
+        </tr>
+        <tr>
+          <td>type="range"</td>
+          <td><input type="range" /></td>
+          <td>
+            You can use the min and max attributes to add numeric restrictions
+            in the input field. <br />type="range" is not supported in Internet
+            Explorer 9 and earlier versions.
+          </td>
+        </tr>
+        <tr>
+          <td>type="reset"</td>
+          <td><input type="reset" /></td>
+          <td>
+            If you change the input values and then click the "Reset" button,
+            the form-data will be reset to the default values.
+          </td>
+        </tr>
+        <tr>
+          <td>type="search"</td>
+          <td><input type="search" /></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>type="submit"</td>
+          <td><input type="submit" /></td>
+          <td>Needs for example PHP for sending data</td>
+        </tr>
+        <tr>
+          <td>type="tel"</td>
+          <td><input type="tel" /></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>type="text"</td>
+          <td><input type="text" /></td>
+          <td>Most common input used</td>
+        </tr>
+        <tr>
+          <td>type="time"</td>
+          <td><input type="time" /></td>
+          <td>
+            type="time" is not supported in Safari or Internet Explorer 12 and
+            earlier versions.
+          </td>
+        </tr>
+        <tr>
+          <td>type="url"</td>
+          <td><input type="url" /></td>
+          <td>The type="url" is not supported in IE9 and earlier versions.</td>
+        </tr>
+        <tr>
+          <td>type="week"</td>
+          <td><input type="week" /></td>
+          <td>
+            type="week" is not supported in Firefox, Safari or Internet Explorer
+            11 and earlier versions.
+          </td>
+        </tr>
+        <tr>
+          <td class="center" colspan="3">Select and textarea:</td>
+        </tr>
+        <tr>
+          <td>Select example:</td>
+          <td>
+            <select name="cars" size="4" multiple>
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="fiat">Fiat</option>
+              <option value="audi">Audi</option>
+            </select>
+          </td>
+          <td>Select is wrapping options.</td>
+        </tr>
+        <tr>
+          <td>Textarea:</td>
+          <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+          <td>
+            The size of a text area can be specified by the cols and rows
+            attributes, or even better; through CSS' height and width
+            properties.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
