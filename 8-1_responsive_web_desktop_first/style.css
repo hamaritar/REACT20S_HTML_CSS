@@ -1,0 +1,71 @@
+/* General selectors and styles designed to make the site look good on DESKTOP screens are defined first. They affect all devices, and must be overridden by media queries targeting INCREASINGLY SMALLER screens */
+
+body {
+  background-color: #dbd2e0;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  color: #333;
+}
+
+h1::after {
+  content: "Default site - desktop ";
+}
+
+/* Media queries */
+
+/* Large devices (large desktops, up to 1200px) */
+
+@media (max-width: 1200px) {
+  body {
+    background-color: #002400;
+  }
+  h1 {
+    color: white;
+  }
+
+  h1::after {
+    content: "extra large screen up to 1200px";
+  }
+}
+
+/* Large devices (desktops, up to 992px) */
+
+@media (max-width: 992px) {
+  body {
+    background-color: #273b09;
+  }
+  h1 {
+    color: white;
+  }
+  h1::after {
+    content: "large devices, up to 992px";
+  }
+}
+/* Large devices (desktops, upt to 992px) */
+@media (max-width: 768px) {
+  body {
+    background-color: #58641d;
+  }
+  h1 {
+    color: white;
+  }
+  h1::after {
+    content: "tablets, up to 768px";
+  }
+}
+
+/* Small devices (landscape phones, up to 576px) */
+
+@media (max-width: 576px) {
+  body {
+    background-color: #7b904b;
+  }
+  h1 {
+    color: white;
+  }
+  h1::after {
+    content: "mobiles, up to 576px";
+  }
+}

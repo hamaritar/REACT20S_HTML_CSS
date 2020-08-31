@@ -1,0 +1,70 @@
+/* General selectors and styles designed to make the site look good on small MOBILE screens are defined first. They affect all devices, and must be overridden by media queries targeting INSCREASINGLY LARGER screens */
+
+body {
+  background-color: #dbd2e0;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  color: #333;
+}
+
+h1::after {
+  content: "Default site - mobiles 0px-575px ";
+}
+
+/* Media queries */
+
+/* Small devices (landscape phones, 576px and up to next breakpoint) */
+
+@media (min-width: 576px) {
+  body {
+    background-color: #7b904b;
+  }
+  h1 {
+    color: white;
+  }
+  h1::after {
+    content: "mobiles 576px-767px";
+  }
+}
+/* Small devices (tablets, 768px and up to next breakpoint) */
+
+@media (min-width: 768px) {
+  body {
+    background-color: #58641d;
+  }
+  h1 {
+    color: white;
+  }
+  h1::after {
+    content: "tablets 768px-991px";
+  }
+}
+/* Large devices (desktops, 992px and up to next breakpoint) */
+
+@media (min-width: 992px) {
+  body {
+    background-color: #273b09;
+  }
+  h1 {
+    color: white;
+  }
+  h1::after {
+    content: "large devices 992px-1199px";
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up to next breakpoint) */
+@media (min-width: 1200px) {
+  body {
+    background-color: #002400;
+  }
+  h1 {
+    color: white;
+  }
+
+  h1::after {
+    content: "extra large screen 1200px and up";
+  }
+}

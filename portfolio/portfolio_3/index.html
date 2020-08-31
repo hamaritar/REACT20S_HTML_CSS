@@ -5,7 +5,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio 2</title>
+    <title>My Portfolio 3</title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Ubuntu+Mono:wght@700&display=swap"
@@ -88,7 +88,25 @@
       </div>
     </main>
     <footer id="footer">
-      <p>Copyright &copy; My Website 2020</p>
+      <div class="container">
+        <h2>Contact me</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Your name</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Your email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message to me</label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+          <button type="submit">Send message</button>
+        </form>
+        <p>Copyright &copy; My Website 2020</p>
+      </div>
     </footer>
   </body>
 </html>
