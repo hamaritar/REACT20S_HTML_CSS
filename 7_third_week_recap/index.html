@@ -55,25 +55,68 @@
               laboriosam aspernatur.
             </p>
           </div>
-          <img src="https://source.unsplash.com/400x400/?nature,water" alt="" />
+          <img src="https://source.unsplash.com/featured/?forest" alt="" />
         </div>
       </div>
       <div class="clearfix"></div>
     </main>
     <footer>
-      <form>
-        <h2>Contact us</h2>
-      </form>
-      <div>
-        <h3>Lorem ipsum dolor sit amet.</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-          necessitatibus dolorem qui fugit quisquam sint accusamus, cum velit
-          neque saepe eos nobis, ipsa molestias consequatur vitae sequi laborum
-          facere. Autem hic expedita reiciendis ea perferendis reprehenderit
-          aliquid delectus cum tenetur culpa magni dolor vel sit minima
-          repudiandae tempora, necessitatibus obcaecati.
-        </p>
+      <div class="container">
+        <form>
+          <h2>Contact us</h2>
+          <div class="form-group">
+            <label for="firstname">First name</label>
+            <input type="text" id="firstname" name="firstname" />
+          </div>
+          <div class="form-group">
+            <label for="lastname">Last name</label>
+            <input type="text" id="lastname" name="lastname" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+          </div>
+          <h3>Do you want to join with our newsletter?</h3>
+          <div class="form-group">
+            <input type="radio" id="join-yes" name="newsletter" />
+            <label for="join-yes">Yes</label>
+          </div>
+          <div class="form-group">
+            <input type="radio" id="join-no" name="newsletter" />
+            <label for="join-no">No</label>
+          </div>
+          <h3>How did you find us?</h3>
+          <div class="form-group">
+            <input type="checkbox" id="friend" name="friend" />
+            <label for="friend">Friend told me</label>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" id="internet" name="internet" />
+            <label for="internet">Found in the Internet</label>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" id="some" name="some" />
+            <label for="some">Saw in Social Media</label>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" id="other" name="other" />
+            <label for="other">Other:</label>
+          </div>
+          <textarea name="message" id="message" placeholder="How?"></textarea>
+          <button type="submit">Send</button>
+          <button type="reset">Reset</button>
+        </form>
+        <div class="right">
+          <h3>Lorem ipsum dolor sit amet.</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+            necessitatibus dolorem qui fugit quisquam sint accusamus, cum velit
+            neque saepe eos nobis, ipsa molestias consequatur vitae sequi
+            laborum facere. Autem hic expedita reiciendis ea perferendis
+            reprehenderit aliquid delectus cum tenetur culpa magni dolor vel sit
+            minima repudiandae tempora, necessitatibus obcaecati.
+          </p>
+        </div>
       </div>
     </footer>
   </body>
