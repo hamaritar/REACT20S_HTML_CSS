@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mukta", sans-serif;
+}
+
+/* header */
+
+header {
+  background-color: #333;
+  position: fixed;
+  height: 60px;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 1rem;
+}
+li {
+  display: inline-block;
+  padding: 1rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+a:hover {
+  color: yellow;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: orange;
+}
+
+Main area main {
+  margin-top: 60px;
+}
+
+footer {
+  background-color: #333;
+}
+
+.text-content p {
+  padding: 1rem;
+  color: grey;
+  background-color: lightgray;
+  margin: 1rem;
+}
+
+/* .text-content p:first-child {
+  color: black;
+  background-color: cyan;
+}
+
+ .text-content p:last-child {
+  color: green;
+  background-color: pink;
+} */
+
+.text-content p:nth-child(even) {
+  color: green;
+  background-color: pink;
+}
+
+.text-content p:nth-child(2) {
+  color: green;
+  background-color: pink;
+  position: relative;
+  top: 75px;
+  left: 75px;
+}
+
+.text-content {
+  position: relative;
+}
+
+.text-content p:nth-child(3) {
+  color: green;
+  background-color: yellow;
+  position: absolute;
+  bottom: 0;
+}
+
+.text-content p:nth-child(4) {
+  position: sticky;
+  top: 200px;
+  background-color: mediumslateblue;
+  color: #333;
+}
+
+i {
+  color: pink;
+}
+/* Hero banner */
+
+section {
+  position: relative;
+  height: 90vh;
+  background: url("https://source.unsplash.com/1600x900/?laptop") no-repeat
+    fixed center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.609);
+  top: 0;
+  left: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  color: white;
+}

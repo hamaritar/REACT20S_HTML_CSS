@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+}
+
+input,
+textarea,
+button {
+  font-family: "PT Sans", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 1.8rem;
+}
+
+p {
+  margin-bottom: 0.8rem;
+  line-height: 2;
+}
+
+a {
+  text-decoration: none;
+  color: coral;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 3rem;
+  min-height: 25vh;
+  margin: 0 auto;
+}
+
+/* Header area */
+
+header {
+  background-color: #333;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+header #logo a {
+  color: coral;
+  font-size: 2rem;
+}
+
+/* Main navigation */
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  color: white;
+  padding: 0.5rem 0;
+  margin: 0 1rem;
+  display: block;
+  border-bottom: 3px double transparent;
+}
+
+header nav ul li a:hover {
+  border-bottom: 3px double coral;
+}
+
+/* Hero Banner */
+
+main #hero-banner {
+  background: url("https://source.unsplash.com/1600x900/?fox") no-repeat fixed
+    center center/cover;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main #hero-banner h1 {
+  color: white;
+  text-align: center;
+  font-size: 5rem;
+  font-family: "Ubuntu Mono", monospace;
+}
+main #hero-banner span {
+  color: coral;
+}
+
+/* Past section  */
+
+main #past {
+  background-color: #f4f4f4;
+}
+
+main #past .past_boxes {
+  display: flex;
+  justify-content: space-between;
+}
+
+main #past .box {
+  background-color: white;
+  width: 32%;
+  padding: 1rem;
+  border-radius: 2px;
+  box-shadow: 0 0 5px #aeaeae;
+}
+
+main #past .box:hover {
+  box-shadow: 0 0 25px #8a8a8a;
+}
+
+main #past .box img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+main #past .box a:hover {
+  color: darkorange;
+  text-decoration: underline;
+}
+
+/* Present section */
+main #present {
+  display: flex;
+  background-color: white;
+}
+
+main #present img {
+  width: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+main #present .content {
+  padding: 3rem;
+}
+
+/* Future section */
+
+main #future {
+  background: url("https://source.unsplash.com/random") no-repeat fixed center
+    center/cover;
+  padding: 3rem;
+}
+
+main #future .container {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+main #future img {
+  width: 300px;
+  float: left;
+  margin-right: 2rem;
+}
+
+/* Footer area */
+
+footer {
+  background-color: #333;
+  text-align: center;
+  color: white;
+  padding: 1.5rem;
+}
+
+footer p {
+  font-size: 0.8rem;
+  margin-top: 3rem;
+}
+
+/* Form */
+footer form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+footer form .form-group {
+  margin: 2rem 0;
+}
+
+footer form .form-group label {
+  width: 200px;
+  display: inline-block;
+  text-align: left;
+}
+
+footer form .form-group input,
+footer form .form-group textarea {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  width: 60%;
+  font-size: 1rem;
+}
+
+footer form .form-group textarea {
+  min-height: 100px;
+}
+
+footer form button {
+  background-color: coral;
+  border-radius: 5px;
+  border: none;
+  padding: 1rem 3rem;
+  color: white;
+  font-size: inherit;
+}
+
+@media (max-width: 899px) {
+  main #present {
+    display: block;
+  }
+  main #present img {
+    width: 100%;
+  }
+  footer form {
+    width: 80%;
+    text-align: left;
+  }
+  footer form .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  footer form .form-group input,
+  footer form .form-group textarea {
+    width: 100%;
+  }
+  footer form button {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  header {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+  }
+  header nav ul li a {
+    padding: 0.5rem;
+  }
+  .container,
+  main #present .content {
+    padding: 1rem;
+  }
+  main #hero-banner h1 {
+    font-size: 3rem;
+    margin: 1rem;
+  }
+  main #past .past_boxes {
+    flex-direction: column;
+  }
+  main #past .box {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  main #future img {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+  }
+
+  main #past,
+  main #future {
+    padding: 0;
+  }
+}
