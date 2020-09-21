@@ -1,0 +1,70 @@
+:root {
+  --background: lightblue;
+  --primary-color: orange;
+  --secondary-color: chocolate;
+  --light-color: #f4f4f4;
+  --dark-color: #333;
+  --font: "Nanum Gothic", sans-serif;
+}
+
+body {
+  background-color: var(--background);
+  font-family: var(--font);
+  color: var(--dark-color);
+}
+
+h1 {
+  text-shadow: -15px 5px 2px var(--primary-color);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.item {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  min-height: 200px;
+  color: var(--light-color);
+  font-size: 2rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 1s;
+}
+
+.item:hover {
+  background-color: var(--secondary-color);
+}
+
+.item:nth-child(even) {
+  text-shadow: 2px 0px 5px var(--dark-color);
+  box-shadow: 0 0 5px var(--dark-color);
+}
+
+.item:nth-child(odd) {
+  text-shadow: 0 0 5px var(--secondary-color);
+  box-shadow: -5px -5px 5px var(--secondary-color);
+}
+
+.circle {
+  background-color: var(--secondary-color);
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 5px var(--dark-color);
+  transition: all 2s ease-out;
+}
+
+.circle:hover {
+  background-color: var(--primary-color);
+  width: 100px;
+  height: 100px;
+  color: var(--light-color);
+}
