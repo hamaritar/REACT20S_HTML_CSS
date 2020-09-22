@@ -1,0 +1,36 @@
+:root {
+  --primary-color: #002da2;
+  --secondary-color: #000c80;
+  --background-color: #dfdfdf;
+  --dark-color: #212529;
+  --light-color: #ffffff;
+  --font-regular: "Finlandica", sans-serif;
+  --font-bold: "FinlandicaBold", sans-serif;
+}
+
+@font-face {
+  font-family: "Finlandica";
+  src: url("assets/fonts/finlandica-regularWeb.woff2") format("woff2"),
+    url("assets/fonts/finlandica-regularWeb.woff") format("woff"),
+    url("assets/fonts/finlandica-regularWeb.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "FinlandicaBold";
+  src: url("assets/fonts/finlandica-boldWeb.woff2") format("woff2"),
+    url("assets/fonts/finlandica-boldWeb.woff") format("woff"),
+    url("assets/fonts/finlandica-boldWeb.ttf") format("truetype");
+}
+
+body {
+  font-family: var(--font-regular);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h2,
+h4,
+h1 span {
+  font-family: var(--font-bold);
+  text-transform: uppercase;
+}
