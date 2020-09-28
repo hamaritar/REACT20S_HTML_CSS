@@ -43,7 +43,7 @@ h1::after {
     content: "large devices, up to 992px";
   }
 }
-/* Large devices (desktops, upt to 992px) */
+/* Large devices (desktops, upt to 768px) */
 @media (max-width: 768px) {
   body {
     background-color: #58641d;
