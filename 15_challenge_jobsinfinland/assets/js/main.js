@@ -4,8 +4,7 @@
 const backToButton = document.getElementById("back-to-top");
 const width = window.matchMedia("(max-width: 576px)");
 
-window.onscroll = () => scrollFunction();
-
+window.onscroll = () => scrollCheck();
 
 const scrollCheck = () =>
   (document.body.scrollTop > 200 ||
