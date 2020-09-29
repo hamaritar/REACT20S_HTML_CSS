@@ -109,20 +109,35 @@ body {
 }
 
 /* Menu animations */
-.menu-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.simple,
+.advanced {
+  text-align: center;
+  height: 150px;
 }
-.menu-item h1 {
+
+h1 {
   display: inline-block;
   position: relative;
   padding: 10px;
+  text-align: left;
+}
+/********* Simple left to right **************/
+.simple h1::after {
+  content: "";
+  height: 4px;
+  width: 0;
+  display: block;
+  background: var(--highlight-color);
+  transition: 1s ease-in all;
+}
+
+.simple:hover h1::after {
+  width: 100%;
 }
 
 /********* LEFT SIDE - bottom to top *********/
 
-.menu-item h1::before {
+.advanced h1::before {
   content: "";
   display: block;
   position: absolute;
@@ -132,12 +147,13 @@ body {
   border-left: 3px solid var(--highlight-color);
   transition: all 1s;
 }
-.menu-item:hover h1::before {
+.advanced:hover h1::before {
   top: 0;
 }
 
 /********* LEFT SIDE - top to bottom *********/
-/* .menu-item h1::before {
+
+/* .advanced h1::before {
   content: "";
   display: block;
   position: absolute;
@@ -147,6 +163,6 @@ body {
   border-left: 3px solid var(--highlight-color);
   transition: all 1s;
 }
-.menu-item:hover h1::before {
+.advanced:hover h1::before {
   bottom: 0;
 } */
