@@ -1,8 +1,9 @@
-// BACK TO TOP BUTTON
-// based on tutorial: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
-
 const backToButton = document.getElementById("back-to-top");
 const width = window.matchMedia("(max-width: 576px)");
+const search = document.getElementById("search-form");
+
+// BACK TO TOP BUTTON
+// based on tutorial: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 
 window.onscroll = () => scrollCheck();
 
@@ -15,4 +16,10 @@ const scrollCheck = () =>
 const backToTop = () => {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+};
+
+// SHOW / HIDE SEARCH FORM
+
+const showHide = () => {
+  search.classList.toggle("hide");
 };

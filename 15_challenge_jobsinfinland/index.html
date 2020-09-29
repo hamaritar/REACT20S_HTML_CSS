@@ -53,8 +53,16 @@
             </ul>
           </nav>
           <div class="search">
-            <div class="btn">
+            <div class="btn" onclick="showHide()">
               <i class="material-icons">search</i>
+            </div>
+            <div id="search-form" class="hide">
+              <form>
+                <input type="text" placeholder="Search" />
+                <button class="btn btn-primary" type="submit">
+                  <i class="material-icons">search</i>
+                </button>
+              </form>
             </div>
           </div>
         </div>
