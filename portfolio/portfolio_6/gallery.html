@@ -1,0 +1,141 @@
+<!-- This is a base for porfolio project -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio project for Business College Helsinki HTML and CSS3 course"
+    />
+    <meta name="author" content="Margit Tennosaar" />
+    <meta name="keywords" content="HTML5, CSS3, Portfolio, school-project" />
+    <title>Portfolio 6</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Ubuntu+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4cb2a646cd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <a href="index.html">MyWeb</a>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Portfolio <i class="fas fa-angle-down"></i> </a>
+            <ul>
+              <li><a href="index.html#work">Work</a></li>
+              <li><a href="index.html#experience">Experience</a></li>
+              <li><a href="index.html#skills">Skills</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+          </li>
+          <li><a href="#footer">Contact me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="gallery">
+        <div class="container">
+          <h2>Gallery</h2>
+          <p>
+            Images from:
+            <a target="_blank" href="https://unsplash.com/">Unsplash</a>
+          </p>
+          <div class="gallery-group">
+            <div class="grid-item-1 grid-div">
+              <img
+                class="grid-item"
+                src="https://source.unsplash.com/collection/1132634/1600x900"
+                alt="random pic from unsplash"
+              />
+            </div>
+            <div class="grid-item-2 grid-div">
+              <img
+                class="grid-item"
+                src="https://source.unsplash.com/collection/306252/1600x900"
+                alt="random pic from unsplash"
+              />
+            </div>
+            <div class="grid-item-3 grid-div">
+              <img
+                class="grid-item"
+                src="https://source.unsplash.com/collection/1240111/1600x900"
+                alt="random pic from unsplash"
+              />
+            </div>
+            <div class="grid-item-4 grid-div">
+              <img
+                class="grid-item"
+                src="https://source.unsplash.com/collection/136493/1600x900"
+                alt="random pic from unsplash"
+              />
+            </div>
+            <div class="grid-item-5 grid-div">
+              <img
+                class="grid-item"
+                src="https://source.unsplash.com/collection/261936/1600x900"
+                alt="random pic from unsplash"
+              />
+            </div>
+            <div class="grid-item-6 grid-div">
+              <img
+                class="grid-item"
+                src="https://source.unsplash.com/collection/1394721/1600x900"
+                alt="random pic from unsplash"
+              />
+            </div>
+            <div class="grid-item-7 grid-div">
+              <img
+                class="grid-item"
+                src="https://source.unsplash.com/collection/46/1600x900"
+                alt="grid-item random pic from unsplash"
+              />
+            </div>
+            <div class="grid-item-8 grid-div">
+              <img
+                class="grid-item"
+                src="https://source.unsplash.com/collection/54/1600x900"
+                alt="random pic from unsplash"
+              />
+            </div>
+            <div class="grid-item-9 grid-div">
+              <img
+                class="grid-item"
+                src="https://source.unsplash.com/collection/827807/1600x900"
+                alt="random pic from unsplash"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <h2>Contact me</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Your name</label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <div class="form-group">
+          <label for="email">Your email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message to me</label>
+          <textarea name="message" id="message"></textarea>
+        </div>
+        <button type="submit">Send message</button>
+      </form>
+      <p>Copyright &copy; My Website 2020</p>
+    </footer>
+  </body>
+</html>

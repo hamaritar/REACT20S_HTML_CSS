@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a3141;
+  font-family: "News Cycle", sans-serif;
+  color: white;
+  line-height: 1.5rem;
+  padding: 3rem;
+}
+
+h1,
+h2 {
+  margin: 0 0 2rem 0;
+}
+
+section {
+  background-color: rgb(212, 212, 212);
+  padding: 3rem;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+/* First grid example */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-rows: 100px 200px 50px 100px;
+  grid-gap: 1rem;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-bottom: 4rem;
+}
+
+.item {
+  background: white;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.grid-container .item:first-child {
+  background: rgb(44, 44, 44);
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  color: #fff;
+}
+
+.grid-container .item:last-child {
+  background: #333;
+  color: #fff;
+  grid-column: 1 / span 3;
+}
+
+/* Grid with areas */
+
+.areas-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "left main main aside"
+    "left main main aside"
+    "something main main aside"
+    "footer footer footer footer";
+  grid-gap: 0.4rem;
+  grid-auto-rows: 1fr;
+}
+
+.header {
+  grid-area: header;
+  background: #333;
+  min-height: 100px;
+  padding: 1rem;
+  color: white;
+}
+
+.left {
+  grid-area: left;
+}
+
+.main {
+  grid-area: main;
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.footer {
+  grid-area: footer;
+  background: #333;
+  color: white;
+}

@@ -1,0 +1,168 @@
+:root {
+  --background-color: cornsilk;
+  --light-color: skyblue;
+  --highlight-color: salmon;
+  --dark-color: #333;
+  --font: "Quicksand", sans-serif;
+  --gradient: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+}
+
+body {
+  background: var(--gradient);
+  font-family: var(--font);
+  height: 100vh;
+}
+
+/* Card transforms on hover */
+
+.card {
+  height: 200px;
+  width: 150px;
+  margin: 0 auto;
+  background: var(--light-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  box-shadow: 0 0 5px var(--dark-color);
+  transition: all 2s 0s;
+  margin-bottom: 2rem;
+}
+
+.card:hover {
+  transform: rotate(125deg);
+  /*  transform: skewY(25deg); */
+  /* transform: skewX(25deg); */
+  /* transform: scale(2, 5); */
+  /* transform: translateY(100px); */
+  /* transform: translateX(-100px); */
+  /* transform: translate(100px, 100px); */
+  /* transform: translate3d(100px, 100px, 100px); */
+  /* perspective: 200px; */
+  /* transform: perspective(400px) rotateY(45deg); */
+}
+
+/* Circle animation */
+
+.circle {
+  background: var(--light-color);
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 0 5px var(--dark-color);
+  /*   animation-name: example; */
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+  position: relative;
+}
+
+/* @keyframes example {
+  from {
+    background: var(--light-color);
+  }
+  to {
+    background: var(--highlight-color);
+    height: 200px;
+    width: 200px;
+    box-shadow: 10px 10px 20px black;
+  }
+} */
+
+@keyframes example {
+  0% {
+    top: 0;
+    left: 0;
+    background: green;
+  }
+  25% {
+    top: 0;
+    left: 200px;
+    background: yellow;
+  }
+  50% {
+    top: 200px;
+    left: 200px;
+    background: pink;
+  }
+  75% {
+    top: 200px;
+    left: 0;
+    background: blue;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    background: green;
+  }
+}
+
+/* Menu animations */
+.simple,
+.advanced {
+  text-align: center;
+  height: 150px;
+}
+
+h1 {
+  display: inline-block;
+  position: relative;
+  padding: 10px;
+  text-align: left;
+}
+/********* Simple left to right **************/
+.simple h1::after {
+  content: "";
+  height: 4px;
+  width: 0;
+  display: block;
+  background: var(--highlight-color);
+  transition: 1s ease-in all;
+}
+
+.simple:hover h1::after {
+  width: 100%;
+}
+
+/********* LEFT SIDE - bottom to top *********/
+
+.advanced h1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 200px;
+  left: 0;
+  bottom: 0;
+  border-left: 3px solid var(--highlight-color);
+  transition: all 1s;
+}
+.advanced:hover h1::before {
+  top: 0;
+}
+
+/********* LEFT SIDE - top to bottom *********/
+
+/* .advanced h1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 200px;
+  border-left: 3px solid var(--highlight-color);
+  transition: all 1s;
+}
+.advanced:hover h1::before {
+  bottom: 0;
+} */

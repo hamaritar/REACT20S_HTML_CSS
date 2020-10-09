@@ -1,0 +1,151 @@
+<!-- This is a base for porfolio project -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio project for Business College Helsinki HTML and CSS3 course"
+    />
+    <meta name="author" content="Margit Tennosaar" />
+    <meta name="keywords" content="HTML5, CSS3, Portfolio, school-project" />
+    <title>Portfolio 6</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Ubuntu+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/4cb2a646cd.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <a href="#">MyWeb</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Portfolio <i class="fas fa-angle-down"></i> </a>
+            <ul>
+              <li><a href="#work">Work</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+          </li>
+          <li><a href="#footer">Contact me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="hero-banner">
+        <h1>Welcome to my <span>Portfolio</span> page</h1>
+      </div>
+      <div id="work">
+        <div class="container">
+          <h2>work</h2>
+          <div class="work_boxes">
+            <div class="box">
+              <img src="https://source.unsplash.com/1600x900/?time" alt="time">
+              <h3>Lorem ipsum dolor sit</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, voluptate?</p>
+              <a href="#">See more</a>
+            </div>
+            <div class="box">
+              <img src="https://source.unsplash.com/1600x900/?car" alt="time">
+              <h3>Lorem ipsum dolor sit</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, voluptate?</p>
+              <a href="#">See more</a>
+            </div>          <div class="box">
+              <img src="https://source.unsplash.com/1600x900/?plane" alt="time">
+              <h3>Lorem ipsum dolor sit</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, voluptate?</p>
+              <a href="#">See more</a>
+            </div>
+          </div>
+      </div>
+      <div id="experience">
+        <img src="https://source.unsplash.com/1600x900/?time" alt="time" />
+        <div class="content">
+          <h2>experience</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Exercitationem delectus consequatur, unde laborum doloremque, et
+            commodi eveniet aperiam molestiae, ea ducimus officiis! Earum
+            ratione accusantium eos explicabo, nulla harum architecto iste
+            delectus dignissimos atque impedit cum ab error reiciendis.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Exercitationem delectus consequatur, unde laborum doloremque, et
+            commodi eveniet aperiam molestiae, ea ducimus officiis! Earum
+            ratione accusantium eos explicabo, nulla harum architecto iste
+            delectus dignissimos atque impedit cum ab error reiciendis.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Exercitationem delectus consequatur, unde laborum doloremque, et
+            commodi eveniet aperiam molestiae, ea ducimus officiis! Earum
+            ratione accusantium eos explicabo, nulla harum architecto iste
+            delectus dignissimos atque impedit cum ab error reiciendis.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Exercitationem delectus consequatur, unde laborum doloremque, et
+            commodi eveniet aperiam molestiae, ea ducimus officiis! Earum
+            ratione accusantium eos explicabo, nulla harum architecto iste
+            delectus dignissimos atque impedit cum ab error reiciendis.
+          </p>
+        </div>
+      </div>
+      <div id="skills">
+        <div class="container">
+          <h2>My skills</h2>   
+          <div class=skills_group>
+            <div class="skill">
+              <i class="fab fa-html5"></i>              <p>HTML5</p>
+              <progress id="file" value="95" max="100"> 32% </progress>
+
+            </div>
+            <div class="skill">
+              <i class="fab fa-css3-alt"></i>              <p>CSS3</p>
+              <progress id="file" value="80" max="100"> 32% </progress>
+
+            </div>
+            <div class="skill">
+              <i class="fas fa-chalkboard"></i>              <p>Teaching</p>
+              <progress id="file" value="70" max="100"> 32% </progress>
+
+            </div>
+            <div class="skill">
+              <i class="fas fa-medal"></i>              <p>Couching</p>
+              <progress id="file" value="70" max="100"> 32% </progress>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="footer">
+        <h2>Contact me</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Your name</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Your email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message to me</label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+          <button type="submit">Send message</button>
+        </form>
+        <p>Copyright &copy; My Website 2020</p>
+    </footer>
+  </body>
+</html>

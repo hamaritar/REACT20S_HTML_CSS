@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: lightblue;
+  background-image: url("wave.png");
+  background-attachment: fixed;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+
+  animation: wave1 15s infinite;
+}
+
+.container {
+  background-image: url("wave1.png");
+  background-attachment: fixed;
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  height: 100vh;
+  animation: wave2 10s infinite;
+}
+
+@keyframes wave1 {
+  0% {
+    background-position: 10% 100%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 10% 100%;
+  }
+}
+@keyframes wave2 {
+  0% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
